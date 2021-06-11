@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <head>
+
+        <title>Calculator</title>
+    </head>
+
+    <body>
+        <div>
+            <link rel="stylesheet" href="Calculator.css">
+
+            </head>
+            <table border="4" class="normal" align="center">
+                <tr>
+                    <td colspan="3"><input type="text" id="result" /></td>
+                    <td><input type="button" id="clear" value="AC" onclick="clr()" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="func" value="π" onclick="PI()" /></td>
+                    <td><input type="button" id="func" value="(" onclick="dis('(')" /> </td>
+                    <td><input type="button" id="func" value=")" onclick="dis(')')" /> </td>
+                    <td><input type="button" id="func" value="abs" onclick="dis('abs')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="func" value="x²" onclick="square()" /> </td>
+                    <td><input type="button" id="func" value="√x" onclick="sqrt()" /> </td>
+                    <td><input type="button" id="func" value="x³" onclick="cube()" /> </td>
+                    <td><input type="button" id="func" value="³√x" onclick="cbrt()" /> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="dis('7')" /> </td>
+                    <td><input type="button" value="8" onclick="dis('8')" /> </td>
+                    <td><input type="button" value="9" onclick="dis('9')" /> </td>
+                    <td><input type="button" id="func" value="/" onclick="dis('/')" /> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="dis('4')" /> </td>
+                    <td><input type="button" value="5" onclick="dis('5')" /> </td>
+                    <td><input type="button" value="6" onclick="dis('6')" /> </td>
+                    <td><input type="button" id="func" value="*" onclick="dis('*')" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="dis('1')" /> </td>
+                    <td><input type="button" value="2" onclick="dis('2')" /> </td>
+                    <td><input type="button" value="3" onclick="dis('3')" /> </td>
+                    <td><input type="button" id="func" value="+" onclick="dis('+')" /> </td>
+                </tr>
+                <td><input type="button" value="0" onclick="dis('0')" /> </td>
+                <td><input type="button" id="func" value="%" onclick="dis('%')" /> </td>
+                <td><input type="button" id="func" value="=" onclick="solve()" /> </td>
+                <td><input type="button" id="func" value="-" onclick="dis('-')" /> </td>
+                <tr>
+                    <td><input type="button" value="." onclick="dis('.')" /> </td>
+                    <td><input type="button" id="func" value="sin" onclick="dis('sin')" /> </td>
+
+                    <td><input type="button" id="func" value="cos" onclick="dis('cos')" /> </td>
+
+                    <td><input type="button" id="func" value="tan" onclick="dis('tan')" /> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="func" value="pow" onclick="dis('^')" /> </td>
+                    <td><input type="button" id="func" value="log" onclick="dis('log')" /> </td>
+                    <td><input type="button" id="func" value="log2" onclick="dis('log2')" /> </td>
+                    <td><input type="button" id="func" value="log10" onclick="dis('log10')" /> </td>
+                </tr>
+        </div>
+        <script src="Calculator.js"></script>
+    </body>
+
+</html>
